@@ -29,7 +29,8 @@ plot(WEIGHT~NECK,data=bears)
 abline(simp)
 summary.lm(simp)
 ```
-Seeing the predicted weight of the bear compared to the neck has a standered error of 43.91 and the multiple R squared is 0.8725.
+Seeing the predicted weight of the bear compared to the neck has a standered error of 43.91 and the multiple R squared is 0.8725. The neck's error is 1.069 while its intercepted or the other error of 22.779.
 
 ## Compare all models that predict WEIGHT other than NECK. Then order them from worst to best by its value of Adjusted-Rsquared (bigger is better), or by RSE (residual standard error) where smaller is better. 
 
+The best model was the R console. The r square and adjusted r square are similar.
