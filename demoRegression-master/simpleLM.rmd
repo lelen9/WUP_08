@@ -7,6 +7,9 @@ output: html_document
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+require(tidyverse)
+require(tigerstats)
+require(knitr)
 ```
 
 ## make a simple regression model
@@ -26,7 +29,7 @@ plot(WEIGHT~NECK,data=bears)
 abline(simp)
 summary.lm(simp)
 ```
-
+Seeing the predicted weight of the bear compared to the neck has a standered error of 43.91 and the multiple R squared is 0.8725.
 
 ## Compare all models that predict WEIGHT other than NECK. Then order them from worst to best by its value of Adjusted-Rsquared (bigger is better), or by RSE (residual standard error) where smaller is better. 
 
