@@ -33,4 +33,15 @@ Seeing the predicted weight of the bear compared to the neck has a standered err
 
 ## Compare all models that predict WEIGHT other than NECK. Then order them from worst to best by its value of Adjusted-Rsquared (bigger is better), or by RSE (residual standard error) where smaller is better. 
 
-The best model was the R console. The r square and adjusted r square are similar.
+```{r}
+simp <- lm(WEIGHT~CHEST,data=bears)
+plot(WEIGHT~CHEST,data=bears)
+abline(simp)
+summary.lm(simp)
+```
+
+the predicted weight of the bear compared to the chest. The Adjusted R-squared is 0.9262 and the Residual standard error is 33.08 
+
+
+
+The Adjusted R-squared 0.7476  and the Residual standard error 5.376.
